@@ -168,6 +168,9 @@ st.set_page_config(page_title="Générateur d'Équations", page_icon="🎓", lay
 
 st.title("🎓 Générateur d'Équations du 2nd Degré")
 
+st.subheader("Restrictions")
+st.write("Génère des équations pour être résolues sans calculatrices, avec b² < 169 et Delta < 169.")
+
 # 1. Choix du mode et Indications
 mode = st.radio(
     "Type de racines souhaitées :", 
@@ -262,4 +265,5 @@ if st.button("🚀 Générer les équations", type="primary", use_container_widt
       }, document.getElementById("root"));
     </script>
   </body>
+
 </html>
